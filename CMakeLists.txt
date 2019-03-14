@@ -48,7 +48,7 @@ target_include_directories(xio SYSTEM INTERFACE $<TARGET_PROPERTY:stl2,INTERFACE
 target_link_libraries(xio INTERFACE stl2)
 target_include_directories(xio INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include>)
+    $<INSTALL_INTERFACE:include>)
 target_compile_features(xio INTERFACE cxx_std_17)
 target_compile_options(xio INTERFACE
     $<$<CXX_COMPILER_ID:GNU>:-fconcepts>
