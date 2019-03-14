@@ -73,4 +73,4 @@ function(add_xio_test TESTNAME EXENAME FIRSTSOURCE)
   add_dependencies(xio-check ${EXENAME})
 endfunction()
 
-add_xio_test(test.empty empty empty-test.cpp)
+add_xio_test(test.concepts concepts concepts-test.cpp)
